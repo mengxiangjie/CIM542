@@ -1,4 +1,4 @@
-# CIM 542 Midterm (PC switch document)
+# CIM 542 Midterm Document (PC switch)
 
 
 ## Inspiration
@@ -30,13 +30,13 @@
 
 
 ## step 3: Use the infrared remote to control LED light
+### I replaced the physical button to IR sensor, I needed to test if the IR sensor can receive the signal. ([click here to see Remote controls LED code](https://github.com/mengxiangjie/CIM542/blob/master/Midterm%20Project/Remote_Controls_LED/Remote_Controls_LED.ino))
 
 
+## step 4:
+### Connect the Arduino Uno to PC motherboard.
+### In the first 15 seconds, I showed how the IR remote controls the LED. After that, I connected it to the PC motherboard and boost up the computer successfully. [Click here to watch my PC remote Video](https://www.youtube.com/watch?v=0X5_sMdxh3c)
 
-
-[Click here to watch my Spaceship Interface Video](https://www.youtube.com/watch?v=yIs-YTIfQFg&feature=youtu.be)
-
-[Spaceship Interface Picture](https://github.com/mengxiangjie/CIM542-1C/blob/master/Week%203/IMG_2860.JPG)
 
 
  
