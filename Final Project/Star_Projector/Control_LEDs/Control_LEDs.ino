@@ -19,38 +19,50 @@ void setup(){
 void loop(){
     if (irrecv.decode(&results)){
 
-        switch(results.value){ //this is LED variation 1
+        switch(results.value){ //Police car lights
           case 0xFFA25D: //Keypad button "1"
           digitalWrite(bluePin, HIGH);
-          delay(200);
+          delay(100);
           digitalWrite(bluePin, LOW);
-          delay(200);
+          delay(100);
           digitalWrite(redPin, HIGH);
-          delay(200);
+          delay(100);
           digitalWrite(redPin, LOW);
-          delay(200);
-          digitalWrite(whitePin, HIGH);
-          delay(200);
-          digitalWrite(whitePin, LOW);
-          delay(200);
+          delay(100);
+      
   
           }
+    
+      
+          
+          
+           
 
-        switch(results.value){ //this is LED variation 2
+        switch(results.value){ //Airplane blinking lights
           case 0xFF629D: //Keypad button "2"
           digitalWrite(redPin, HIGH);
-          delay(2000);
+          delay(100);
           digitalWrite(redPin, LOW);
+          delay(100);
+          digitalWrite(whitePin, HIGH);
+          delay(100);
+          digitalWrite(whitePin, LOW);
+          delay(2000);
           }
 
-        switch(results.value){ //this is LED variation 3
+        switch(results.value){ //Fire alarm blinking
           case 0xFFE21D: //Keypad button "3"
           digitalWrite(whitePin, HIGH);
-          delay(2000);
+          delay(10);
           digitalWrite(whitePin, LOW);
+          delay(10);
+          digitalWrite(whitePin, HIGH);
+          delay(10);
+          digitalWrite(whitePin, LOW);
+          delay(1000);
           }
 
-        irrecv.resume(); 
+//        irrecv.resume(); 
 
 }
 }
